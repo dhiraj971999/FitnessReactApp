@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.HomeBanner{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    /* background-image: url('./background.jpg');
+    background-position:center ;
+    background-size: cover;
+    overflow-x : hidden;
+    opacity: 0.75; */
+    align-items: center;
+}
+.home-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100vh;
+    background-image: url('./background.jpg');
+    background-position:center ;
+    background-size: cover;   
+    opacity: 0.80;
+    z-index: -10;
+}
+
+.bg-main{
+    width:100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.bg-main h1{
+    font-size: 5rem;
+}
+
+.bg-main p{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.bg-main button{
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+    /* background-color: transparent;
+    color: white;*/
+    border: none;  
+    background-color: rgb(245, 32, 67);
+    color: white;
+}
+
+@media (max-width:650px){
+    .bg-main h1{
+        font-size: 3rem;
+    }
+    .bg-main p{
+        font-size: 2rem;
+    }
+    .btn-main{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+       
+    }
+    .btn-main button{
+        margin: 10px 0px;
+    }
+}

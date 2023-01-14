@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    /* background-color: black;
+    color: white; */
+    justify-content: space-between;
+    background-color: transparent;
+    /* background-color: rgb(248, 68, 98); */
+    color: rgb(245, 32, 67);
+    /* text-align: center; */
+
+}
+
+.navbar2{
+    display: flex;
+    /* background-color: black;*/
+    color: white; 
+     background-color: rgb(248, 68, 98);
+    justify-content: space-between;
+    /* background-color: transparent;
+   
+    color: rgb(245, 32, 67); */
+
+}
+.navbar h1, .navbar2 h1{
+    padding:5px 0px 5px 6rem ;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 40px;
+}
+.navlinks{
+    margin-right: 5rem;
+}
+.navlinks ul{
+    display: flex;
+   
+}
+
+.navlinks li{
+    list-style: none;
+    padding: 19px 20px;
+    cursor: pointer;
+}
+
+.navlinks li:hover{
+    background-color: rgb(251, 142, 142);
+}
+
+.navbar a{
+    color: rgb(245, 32, 67);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+}
+.navbar2 a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+}
+.ham-menu{
+    display: none;
+}
+
+@media (max-width:900px){
+    .navbar h1, .navbar2 h1{
+        padding:5px 0px 5px 2rem;
+    }
+    .navlinks{
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:750px){
+    .ham-menu{
+        display: block;
+        font-size: 35px;
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        right:5px;
+        z-index: 5;
+    }
+    .navbar h1, .navbar2 h1{
+        padding:5px 0px 5px 2rem;
+    }
+
+    .navlinks{
+        display: none;
+    }
+   
+    .mobile-navlinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        background-color: black;
+        width: 50vw;
+        height: 100vh;
+        transition: all 5s ease-in-out 5s;
+    }
+    .mobile-navlinks li{
+        list-style: none;
+        /* width: 100%; */
+        text-align: center;
+        padding: 25px;
+    }
+    .mobile-navlinks a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      
+        color: white;
+       
+    }
+    .mobile-navlinks li:hover{
+        background-color: gray;
+    }
+}

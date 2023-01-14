@@ -1,0 +1,105 @@
+.detail-main{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-left: 1rem;
+}
+
+.gif img{
+    width: 500px;
+    height: 500px;    
+
+}
+
+.detail h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.detail .target{
+    display: flex;
+    margin: 50px 0px;
+    align-items: center;
+}
+
+.target p{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+
+/* **********Youtube Videos************** */
+
+
+.ytVideo-main{
+    font-size: 23px;
+}
+
+.ytVideo-main a{
+    color: rgb(80, 80, 244);
+}
+
+.ytVideo-main h2{
+    margin: 15px 0px 20px 10px;
+}
+
+.ytVideo{
+    display: flex;
+    overflow-x: auto;
+}
+
+.exercise-video{
+    margin: 15px 20px;
+    
+}
+
+.exercise-video:hover{
+    transform: scale(1.05);
+}
+
+.exercise-video img{
+    width:450px;
+    height: 300px;
+}
+
+
+/* **********SimilarExercises********** */
+
+.SimilarExercises{
+    font-size: 23px;
+}
+
+.SimilarExercises{
+    margin: 25px 0px 10px 10px;
+}
+
+
+
+
+
+@media (max-width:700px){
+
+    .ytVideo{
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise-video img{
+        width:85vw;
+        height: 30vh;
+    }
+    .detail-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-top: 50px;
+    }
+    .gif img{
+        width: 90vw;
+        height: 60vh;    
+    
+    }
+}
